@@ -78,7 +78,7 @@ function ataqueAgua() {
 }
 
 function ataqueAleatorioEnemigo(){
-    let ataqueAleatorio = aleatorio (1,3)
+    let ataqueAleatorio = aleatorio(1,3)
 
     if(ataqueAleatorio == 1) {
         ataqueEnemigo = 'fire'
@@ -91,26 +91,26 @@ function ataqueAleatorioEnemigo(){
     combate()
 }
 
-function combate (){
+function combate(){
     let spanVidasJugador = document.getElementById('vidas-jugador')
     let spanVidasEnemigo = document.getElementById('vidas-enemigo')
 
     if(ataqueEnemigo == ataqueJugador){
-        crearMensaje ("Tie")
+        crearMensaje("Tie")
     }   else if (ataqueJugador == 'fire' && ataqueEnemigo == 'earth'){
-        crearMensaje ("You win") 
+        crearMensaje("You win") 
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
     }   else if (ataqueJugador == 'water' && ataqueEnemigo == 'fire'){
-        crearMensaje ("You win")
+        crearMensaje("You win")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
     }   else if (ataqueJugador == 'earth' && ataqueEnemigo == 'water'){
-        crearMensaje ("You win") 
+        crearMensaje("You win") 
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
     }   else {
-        crearMensaje ("You lost")
+        crearMensaje("You lost")
         vidasJugador--
         spanVidasJugador.innerHTML = vidasJugador
     }
@@ -121,39 +121,34 @@ function combate (){
 
 function revisarVidas () {
     if (vidasEnemigo == 0) {
-        crearMensajeFinal ("YOU WIN :)")
+        crearMensajeFinal("YOU WIN")
     } else if (vidasJugador ==0) {
-        crearMensajeFinal ("YOU LOST :(")
+        crearMensajeFinal("YOU LOST")
     } 
 
 } 
 
 function crearMensaje(resultado) {
     let sectionMensajes = document.getElementById('resultado')
-    let nuevoAtaqueDelJugador = document.getElementById('ataques-del-jugador')
-    let nuevoAtaquesDelEnemigo = document.getElementById('ataques-del-enemigo')
+    let ataquesDelJugador = document.getElementById('ataques-del-jugador')
+    let ataquesDelEnemigo = document.getElementById('ataques-del-enemigo')
 
-    let notificacion = document.createElement('p')
-    let ataquesDelEnemigo = document.createElement('p')
-    let ataquesDelJugador = document.createElement('p')
+    let nuevoAtaqueDelJugador = document.createElement('p')
+    let nuevoAtaqueDelEnemigo = document.createElement('p')
 
-    notificacion.innerHTML = resultado
-    nuevoAtaqueDelJugador.innerHTML = ataquelJugador
-    nuevoAtaquesDelEnemigo.innerHTML = ataqueEnemigo
+    sectionMensajes.innerHTML = resultado
+    nuevoAtaqueDelJugador.innerHTML = ataqueJugador
+    nuevoAtaqueDelEnemigo.innerHTML = ataqueEnemigo
 
-    sectionMensajes.appendChild(notificacion)
     ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
-    ataquesDelEnemigo.appendChild(nuevoAtaquesDelEnemigo)
+    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
 
 }
 
 function crearMensajeFinal(resultadoFinal) {
-    let sectionMensajes = document.getElementById('mensajes')
+    let sectionMensajes = document.getElementById('resultado')
 
-    let parrafo = document.createElement('p')
-    parrafo.innerHTML = resultadoFinal 
-
-    sectionMensajes.appendChild(parrafo)
+    sectionMensajes.innerHTML = resultadoFinal 
 
     let botonFuego = document.getElementById('boton-fuego')
     botonFuego.disabled = true

@@ -55,7 +55,9 @@ body {
     background-color: #483838;
     border: 2px solid black;
     margin-top: 30px;
+    font-size: 18px;
     font-family: 'Bangers', cursive;
+ 
 }
 
 input {
@@ -80,8 +82,28 @@ input {
     align-items: center;
     color:black;
     font-family: 'Bangers', cursive;
-    font-size: 15px;
+    font-size: 18px;
 }
+
+#mensajes {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding: 8px; 
+    margin: 12px;
+    color: #D2D79F;
+    font-size: 23px;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: black;
+
+
+
+
+}
+    
 
 
   
