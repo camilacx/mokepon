@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    font-family: 'Bangers', cursive;
+    background-color: #42855B;
+}
+
+#choose-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: #D2D79F;
+    font-size: 48px;
+} 
+
+.subtitulo {
+    color: black;
+    font-size: 28px;
+
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background-color: #483838;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 24px;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 68px;
+}
+
+#boton-mascota {
+    width: 500px;
+    height: 40px;
+    border-radius: 24px;
+    background-color: #483838;
+    border: 2px solid black;
+    margin-top: 30px;
+    font-family: 'Bangers', cursive;
+}
+
+input {
+    display: none;
+}
+
+#choose-attack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color:#483838;
+    padding: 8px; 
+    box-sizing: border-box;
+    border-radius: 24px;
+    margin: 12px;
+    width: 116px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-family: 'Bangers', cursive;
+    font-size: 15px;
+}
+
+
+  
+
+    
+
+
+
+
+
+   
+  
+  
+
+    
+
+
+
+
+
+
+
+
+

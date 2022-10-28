@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title> MOKEPON </title>
+        <script src = "./js/mokepon.js"></script>
+        <link rel = "stylesheet" href="./mokepon.css "> 
+
+    </head>
+    <body>
+
+        <section id = "choose-pet"> 
+            <h1 class = "titulo"> MOKEPON </h1> 
+
+            <h2 class = "subtitulo" > Choose your pet: </h2>
+
+            <div class = "tarjetas"> 
+                <label class = "tarjeta-de-mokepon" for = "Hipodoge"> 
+                    <p> Hipodoge </p>
+                    <img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt = "Hipodoge">  
+                </label>
+                <input type = "radio" name = "mascota" id = "Hipodoge"/>
+    
+                <label class = "tarjeta-de-mokepon" for = "Capipeo"> 
+                    <p> Capipeo </p>
+                    <img src="./assets/mokepons_mokepon_capipepo_attack.png" alt = "Capipeo">  
+                </label>
+                <input type = "radio" name = "mascota" id = "Capipeo"/>
+    
+                <label class = "tarjeta-de-mokepon" for = "Ratigueya"> 
+                    <p> Ratigueya </p>
+                    <img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt = "Ratigueya">  
+                </label>
+                <input type = "radio" name = "mascota" id = "Ratigueya"/>
+            </div>
+
+            <button id = "boton-mascota"> Choose </button>
+        </section>
+
+        <section id = "choose-attack"> 
+            <h1 class = "titulo"> MOKEPON </h1> 
+
+            <h2 class = "subtitulo"> Choose your attack: </h2>
+
+            <div>
+                <button id = "boton-fuego" class = "boton-de-ataque"> Fire 🔥 </button> 
+                <button id = "boton-agua" class = "boton-de-ataque"> Water 💧 </button>
+                <button id = "boton-tierra"  class = "boton-de-ataque"> Earth 🌱 </button>
+            </div>
+
+            <div>              
+                <section id = "mensajes" >
+                </section>
+
+                <div id = "resultado"></div>
+                <div id = "ataque-del-jugador"></div>
+                <div id = "ataque-del-enemigo"></div>
+
+           
+
+                <section id = "reiniciar">
+                    <button id = "boton-reiniciar"> Play again </button>
+                </section>
+            </div>
+
+            <div>
+                <p> Your pet <span id = "mascota-jugador"> </span> has <span id = "vidas-jugador"> 3 </span> lives </p> 
+                <p> The opponent's pet <span id = "mascota-enemigo"> </span> has <span id = "vidas-enemigo"> 3 </span> lives </p>
+            </div>  
+        </section>  
+    </body>
+</html
